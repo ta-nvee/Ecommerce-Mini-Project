@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="navbar">
+  <h2>🎓 Student Portal</h2>
+  <button onclick="logout()">Logout</button>
+</div>
+
+<div class="grid">
+
+  <!-- Chatbot -->
+  <div class="card">
+    <h3>💬 Chatbot</h3>
+    <div id="chat-box"></div>
+    <input id="chat-input" placeholder="Ask something...">
+    <button onclick="sendMessage()">Send</button>
+  </div>
+
+  <!-- Notes -->
+  <div class="card">
+    <h3>📝 Notes</h3>
+    <textarea id="note-input" placeholder="Write notes..."></textarea>
+    <button onclick="saveNote()">Save</button>
+    <div id="notes-list"></div>
+  </div>
+
+  <!-- Event Planner -->
+  <div class="card">
+    <h3>📅 Event Planner</h3>
+    <input type="text" id="event-input" placeholder="Event name">
+    <input type="date" id="event-date">
+    <button onclick="addEvent()">Add Event</button>
+    <ul id="event-list"></ul>
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
